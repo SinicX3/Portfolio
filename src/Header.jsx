@@ -1,8 +1,8 @@
 function Header () {
 return (<header>
-  <div>Benoit Théry, développeur frontend</div>
-  <div>
-    <p>Mon portfolio</p>
+  <div id="title">Benoit Théry, développeur frontend</div>
+  <div id="list">
+    <p>Mon portfolio :</p>
     <div>MoovIt</div>
     <div>Kaza</div>
     <div>CaesR</div>
