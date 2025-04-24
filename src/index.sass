@@ -1,3 +1,8 @@
+:root
+  --1st-site-color: #cc7400
+  --2nd-site-color: #00cc0a
+  --3rd-site-color: #0e00cc
+
 body
   margin: 0px
 
@@ -11,7 +16,7 @@ header
   font-style: italic
 
   #title
-    margin-left: 10px
+    margin-left: 5%
     font-size: 30px
     font-family: "Roboto"
 
@@ -31,22 +36,24 @@ header
       height: 40px
       align-content: center
       cursor: pointer
+      &:hover
+        text-decoration: underline
 
       > *
         border-radius: 10px
 
-    .Moovit
-      background-color: #cc7400
+    #Moovit
+      background-color: var(--1st-site-color)
       border-radius: 20px 20px 0px 0px
       color: #ffffff
 
-    .Kaza
-      background-color: #00cc0a
+    #Kaza
+      background-color: var(--2nd-site-color)
       border-radius: 20px 20px 0px 0px
       color: #ffffff
 
-    .CaesR
-      background-color: #0e00cc
+    #CaesR
+      background-color: var(--3rd-site-color)
       border-radius: 20px 20px 0px 0px
       color: #ffffff
 
@@ -69,7 +76,7 @@ section
 
 //*********** Section profile
 
-.profile_section
+#profile_section
   display: initial
 
 .profile
@@ -84,7 +91,28 @@ section
   display: flex
   justify-content: space-evenly
 
-//*********** Section profile
+//*********** Moovit
 
 #Moovit_section
   display: none
+  background-color: var(--1st-site-color)
+
+//*********** Kaza
+
+#Kaza_section
+  display: none
+  background-color: var(--2nd-site-color)
+
+//*********** CaesR
+
+#CaesR_section
+  display: none
+  background-color: var(--3rd-site-color)
+
+//*********** All sites
+
+.panel
+  margin-top: 50px
+  width: 80%
+  padding: 20px
+  border-radius: 20px
