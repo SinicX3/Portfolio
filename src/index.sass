@@ -8,10 +8,12 @@ header
   align-items: center
   justify-content: space-between
   height: 40px
-  background-color: grey
+  font-style: italic
 
   #title
     margin-left: 10px
+    font-size: 30px
+    font-family: "Roboto"
 
   #list
     display: flex
@@ -20,10 +22,69 @@ header
     > *
       width: 80px
       text-align: center
-      margin: 0px 5px
 
     p
       width: 100px
+      margin: 0px 15px
 
     div
+      height: 40px
+      align-content: center
       cursor: pointer
+
+      > *
+        border-radius: 10px
+
+    .Moovit
+      background-color: #cc7400
+      border-radius: 20px 20px 0px 0px
+      color: #ffffff
+
+    .Kaza
+      background-color: #00cc0a
+      border-radius: 20px 20px 0px 0px
+      color: #ffffff
+
+    .CaesR
+      background-color: #0e00cc
+      border-radius: 20px 20px 0px 0px
+      color: #ffffff
+
+//*********** Main
+
+main
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-family: "Roboto"
+  font-style: italic
+
+  #photo
+    width: 300px
+    border-radius: 20px
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2)
+
+section
+  width: 80%
+
+//*********** Section profile
+
+.profile_section
+  display: initial
+
+.profile
+  display: flex
+  justify-content: center
+  margin: 100px 20px
+
+  .text
+    margin-left: 40px
+
+.skills
+  display: flex
+  justify-content: space-evenly
+
+//*********** Section profile
+
+#Moovit_section
+  display: none
