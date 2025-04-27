@@ -3,7 +3,7 @@ function display (e) {
   console.log(allSitesProperties)
   allSitesProperties.forEach((i) => i.style.display="none")
 
-  document.getElementById(e).style.display="initial"
+  document.getElementById(e).style.display="grid"
 }
 
 export default display
