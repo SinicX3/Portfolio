@@ -35,7 +35,7 @@ function Kasa() {
         <img src="/sites/Kasa (3).png"/>
       </div>
       <div className="site_link">
-        <a href="https://ton-lien-vers-kasa.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/SinicX3/Projet-5---React.git" target="_blank" rel="noopener noreferrer">
           Retrouvez ce projet sur GitHub
         </a>
       </div>

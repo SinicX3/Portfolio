@@ -2,13 +2,13 @@
 function Moovit () {
  return(<section id="Moovit_section" className="panel">
   <div className="site_description">
-    <img src="/sites/Kasa_logo.png" id="kasa_logo" alt="Logo de Kasa" />
+    <img src="/sites/Moovit_logo.png" id="Moovit_logo" alt="Logo de Moovit" />
     <h2>Réalisation d'un site dédié à la recherche de biens immobiliers.</h2>
     <p>Date : Février 2025</p>
     <p>Produit dans le cadre de la formation OpenClassrooms, ce site illustre mes compétences avec React et React-Router.</p>
   </div>
   <div className="site_img">
-    <img src="/sites/Kasa (1).png"/>
+    <img src="/sites/Moovit (1).png"/>
   </div>
   <div className="objectifs">
     <h3>Objectifs :</h3>
@@ -20,7 +20,7 @@ function Moovit () {
     </ul>
   </div>
   <div className="site_img">
-    <img src="/sites/Kasa (2).png"/>
+    <img src="/sites/Moovit (2).png"/>
   </div>
   <div className="site_technos">
     <h3>Technologies utilisées :</h3>
@@ -32,10 +32,10 @@ function Moovit () {
     </ul>
   </div>
   <div className="site_img">
-    <img src="/sites/Kasa (3).png"/>
+    <img src="/sites/Moovit (3).png"/>
   </div>
   <div className="site_link">
-    <a href="https://ton-lien-vers-kasa.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/SinicX3/MoovIt.git" target="_blank" rel="noopener noreferrer">
       Retrouvez ce projet sur GitHub
     </a>
   </div>

@@ -1,7 +1,7 @@
 function Profile () {
 
   return(
-  <section id="profile_section" className="panel">
+  <section id="profile_section" className="panel" >
     <div className="profile">
       <img src="/IMG_9743.jpg" id="photo"/>
       <div className="text">
