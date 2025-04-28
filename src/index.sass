@@ -5,7 +5,9 @@
 
 body
   margin: 0px
-  font-family: "Roboto"
+  font-family: "Cal Sans", sans-serif
+  font-weight: 400
+  font-style: normal
 
 //*********** Header
 
@@ -67,17 +69,23 @@ main
     width: 300px
     border-radius: 20px
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2)
+    &:hover
+      transform: scale(1.05)
+      transition: transform 0.3s ease
 
 section
   width: 80%
 
 #Moovit_section, #Kasa_section
   display: none
+  color: white
 
 //*********** Section profile
 
 #profile_section
   display: initial
+  background-color: #bcceff
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2)
 
 .profile
   display: flex
@@ -88,8 +96,35 @@ section
     margin-left: 40px
 
 .skills
-  display: flex
-  justify-content: space-evenly
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+
+  div
+    display: flex
+    flex-direction: column
+
+    p
+      font-size: 20px
+      font-weight: 700
+
+    li
+      font-size: 15px
+
+    img
+      align-self: center
+      width: 100px
+
+    #react
+      &:hover
+        animation: rotate 4s ease infinite
+
+    #SEO
+      &:hover
+        animation: aplat 3s ease
+
+    #soft
+      &:hover
+        animation: rebond 2s ease infinite
 
 //*********** Moovit
 
@@ -133,7 +168,7 @@ section
       margin-bottom: 1rem
 
     ul
-      list-style: inside disc
+      list-style: circle
       li
         margin-bottom: 0.5rem
 
@@ -146,7 +181,7 @@ section
       margin-bottom: 1rem
 
     ul
-      list-style: inside square
+      list-style: circle
       li
         margin-bottom: 0.5rem
 
@@ -247,6 +282,28 @@ section
   width: 80%
   padding: 20px
   border-radius: 20px
+
+//***************************************************************** Animations
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
+@keyframes rebond
+  0%, 100%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(-10px)
+
+@keyframes aplat
+  0%, 100%
+    transform: scaleX(1)
+
+  50%
+    transform: scaleX(0)
 
 //***************************************************************** Media queries
 
