@@ -5,7 +5,7 @@ function Kasa() {
         <img src="/sites/Kasa_logo.png" id="kasa_logo" alt="Logo de Kasa" />
         <h2>Réalisation d'un site dédié à la recherche de biens immobiliers.</h2>
         <p>Date : Février 2025</p>
-        <p>Produit dans le cadre de la formation OpenClassrooms, ce site illustre mes compétences avec React et React-Router.</p>
+        <p>Produit dans le cadre de la formation OpenClassrooms, ce site illustre mes compétences avec React et React-Router, notamment sur l'utilisation des hooks et des composants</p>
       </div>
       <div className="site_img">
         <img src="/sites/Kasa (1).png"/>
@@ -25,9 +25,9 @@ function Kasa() {
       <div className="site_technos">
         <h3>Technologies utilisées :</h3>
         <ul>
-          <li>React</li>
-          <li>React Router</li>
-          <li>Sass</li>
+          <li>React, React Router</li>
+          <li>Gestion d'état avec useState</li>
+          <li>Gestion de contexte avec useContext</li>
           <li>GitHub</li>
         </ul>
       </div>
