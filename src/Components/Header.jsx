@@ -1,13 +1,13 @@
-import display from "../Functions/display"
+import Display from "../Functions/Display"
 
 function Header () {
 return (<header>
   <div id="title">Benoit Théry</div>
   <div id="list">
-    <div id="Home" className="button" onClick={() => display("profile_section")}>Accueil</div>
+    <div id="Home" className="button" onClick={() => Display ("profile_section")}>Accueil</div>
     <p>Réalisations :</p> 
-    <div id="Moovit" className="button" onClick={() => display("Moovit_section")}>MoovIt</div>
-    <div id="Kasa" className="button" onClick={() => display("Kasa_section")}>Kasa</div>
+    <div id="Moovit" className="button" onClick={() => Display("Moovit_section")}>MoovIt</div>
+    <div id="Kasa" className="button" onClick={() => Display("Kasa_section")}>Kasa</div>
     {/* <div id="CaesR" className="button" onClick={() => display("CaesR_section")}>CaesR</div> */}
   </div>
 </header>)

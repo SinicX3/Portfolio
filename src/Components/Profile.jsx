@@ -6,7 +6,13 @@ function Profile () {
       <img src="/IMG_9743.jpg" id="photo"/>
       <div className="text">
         <h1>Développeur frontend</h1>
-        <p>Formé à JavaScript, avec un intérêt prononcé pour React, je développe des interfaces intuitives et agréables.</p> 
+        <p>Formé à JavaScript, avec un intérêt prononcé pour React, je développe des interfaces intuitives et agréables.</p>
+        <div id="contact">
+          <a href="mailto:thery.benoit@hotmail.fr">
+            <img id="mail" src="/envelope-solid.svg" alt="Contacter par mail" />
+          </a>
+          <img src="/phone-solid.svg"/>
+        </div>
       </div>
     </div>
     <div className="skills">
