@@ -1,4 +1,36 @@
+import React, {useState} from "react"
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+Modal.setAppElement('#root');
+
 function Profile () {
+
+  let subtitle
+  const [modalIsOpen, setIsOpen] = React.useState(false)
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00'
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   return(
   <section id="profile_section" className="panel" >
@@ -11,7 +43,15 @@ function Profile () {
           <a href="mailto:thery.benoit@hotmail.fr">
             <img id="mail" src="/envelope-solid.svg" alt="Contacter par mail" />
           </a>
-          <img src="/phone-solid.svg"/>
+          <img src="/phone-solid.svg" onClick={openModal}/>
+          <Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+          ><p>06 23 69 05 28</p>
+          </Modal>
         </div>
       </div>
     </div>
