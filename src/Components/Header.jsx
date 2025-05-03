@@ -1,4 +1,4 @@
-import Display from "../Functions/Display"
+import Display from "../Functions/Display.js"
 
 function Header () {
 return (<header>
