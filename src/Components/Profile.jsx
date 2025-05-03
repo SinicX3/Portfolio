@@ -12,6 +12,7 @@ function Profile () {
       <div className="text">
         <h1>Développeur frontend</h1>
         <p>Formé à JavaScript, avec un intérêt prononcé pour React, je développe des interfaces intuitives et agréables.</p>
+        <p>Avec 10 ans en tant que rédacteur web/SEO, j'ai d'autres compétences utiles pour le référencement et la création de contenus adaptés au web.</p>
         <div id="contact">
           <a href="mailto:thery.benoit@hotmail.fr">
             <img id="mail" src="/envelope-solid.svg" alt="Contacter par mail" />
@@ -31,7 +32,8 @@ function Profile () {
         <h2>Formé à React</h2> 
         <ul>
           <li>Maîtrise des concepts de composants, props, hooks et états</li>
-          <li>Egalement des bases en backend (Express, Node, MongoDB...)</li>
+          <li>Formation JavaScript/TypeScript</li>
+          <li>Les bases en backend (Express, Node, MongoDB...)</li>
         </ul>
       </div>
       <div>
