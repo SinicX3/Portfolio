@@ -33,7 +33,8 @@ function Profile () {
         <ul>
           <li>Maîtrise des concepts de composants, props, hooks et états</li>
           <li>Formation JavaScript/TypeScript</li>
-          <li>Les bases en backend (Express, Node, MongoDB...)</li>
+          <li>Volonté d'évolution vers le mobile (PWA)</li>
+          <li>Des bases en backend (Express, Node, MongoDB...)</li>
         </ul>
       </div>
       <div>
