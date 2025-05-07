@@ -342,6 +342,7 @@ section
     transform: scaleX(0)
 
 //***************************************************************** Media queries
+// Fonctionnement garanti jusqu'à 350px de large
 
 @media screen and (max-width: 820px)
 
@@ -353,7 +354,7 @@ section
   .objectifs,
   .site_technos,
   .site_link
-    grid-column: 1 / 2 // Chaque bloc prend toute la largeur
+    grid-column: 1 / 2
 
   .site_img
     img
@@ -371,3 +372,10 @@ section
   header
     #Home, p
       display: none
+
+    #title
+      margin: 5%
+
+    #list
+      > *
+        width: 100px
