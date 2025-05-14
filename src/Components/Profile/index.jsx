@@ -1,4 +1,4 @@
-import ModalComponent from "./ModalComponent"
+import ModalComponent from "../ModalComponent"
 import { useState } from "react"
 
 function Profile () {
