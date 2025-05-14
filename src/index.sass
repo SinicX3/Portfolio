@@ -1,7 +1,8 @@
 :root
+  --profile-color: linear-gradient(135deg,rgb(146, 138, 255), #bcb5ff)
   --1st-site-color: linear-gradient(135deg, #ffc77d, #ffb17d)
   --2nd-site-color: linear-gradient(135deg, #7aff81, #32d3a4)
-  --3rd-site-color: linear-gradient(135deg, #aca6ff, #bcb5ff)
+  --3rd-site-color: linear-gradient(135deg,rgb(255, 138, 138),rgb(255, 181, 181))
   --font-1st-color: #222222
   --font-2nd-color: #535353
 
@@ -89,8 +90,11 @@ section
 
 #profile_section
   display: initial
-  background: var(--3rd-site-color)
+  background: var(--profile-color)
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2)
+  transform: translateX(-100px)
+  transition: transform 3s ease, opacity 3s ease
+  opacity: 0
 
   p
     color: var(--font-2nd-color)
@@ -99,6 +103,10 @@ section
     font-size: 50px
     margin: 0px
     color: var(--font-1st-color)
+
+  &.visible
+    transform: translateX(0px)
+    opacity: 1
 
 .ReactModalPortal
 
@@ -320,7 +328,7 @@ section
   padding: 20px
   border-radius: 20px
 
-//***************************************************************** Animations
+//***************************************************************** Animations profil
 @keyframes rotate
   from
     transform: rotate(0deg)

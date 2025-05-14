@@ -1,18 +1,21 @@
+import Hidden from "../../Functions/Hidden";
 import ModalComponent from "../ModalComponent"
 import { useState } from "react"
 
 function Profile () {
 
   const [modalOpen, setModalOpen] = useState(false);
+  Hidden("profile_section", 500)
+  Hidden("react", 1000)
 
   return(
-  <section id="profile_section" className="panel" >
+  <section id="profile_section" className="panel hidden">
     <div className="profile">
       <img src="/IMG_9743.jpg" id="photo"/>
       <div className="text">
-        <h1>Développeur frontend</h1>
-        <p>Formé à JavaScript, avec un intérêt prononcé pour React, je développe des interfaces intuitives et agréables.</p>
-        <p>Avec 10 ans en tant que rédacteur web/SEO, j'ai d'autres compétences utiles pour le référencement et la création de contenus adaptés au web.</p>
+        <h1>Développeur frontend junior</h1>
+        <p>Ancien rédacteur SEO, je me consacre aujourd'hui à la création d'interfaces intuitives.</p>
+        <p>Ici, vous pouvez découvrir quelques-uns des projets (personnels et professionnels) sur lesquels j'interviens.</p>
         <div id="contact">
           <a href="mailto:thery.benoit@hotmail.fr">
             <img id="mail" src="/envelope-solid.svg" alt="Contacter par mail" />
@@ -33,7 +36,7 @@ function Profile () {
         <ul>
           <li>Maîtrise des concepts de composants, props, hooks et états</li>
           <li>Formation JavaScript/TypeScript</li>
-          <li>Volonté d'évolution vers le mobile (PWA)</li>
+          <li>Volonté d'évolution vers le mobile : Flutter, PWA...</li>
           <li>Des bases en backend (Express, Node, MongoDB...)</li>
         </ul>
       </div>
@@ -42,9 +45,9 @@ function Profile () {
         <h2>Excellent rédactionnel</h2> 
         <ul>
           <li>10 ans d'expérience comme rédacteur web</li>
+          <li>Maîtrise de l'optimisation SEO rédactionnelle</li>
           <li>Excellent niveau de français</li>
           <li>Bon niveau d'anglais</li> 
-          <li>Expérience du SEO</li>
         </ul>
       </div>
       <div>
@@ -53,6 +56,8 @@ function Profile () {
         <ul>
           <li>Profil enthousiaste et collaboratif</li>
           <li>Flexibilité de travail</li>
+          <li>Habitué au travail à distance</li>
+          <li>Formé à la méthode Agile </li>
         </ul>
       </div>
     </div>
