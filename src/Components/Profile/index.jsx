@@ -54,7 +54,7 @@ function Profile () {
         <img src='SoftSkills_logo.png' id="soft"/>
         <h2>Soft skills adaptés au travail d'équipe</h2>
         <ul>
-          <li>Profil enthousiaste et collaboratif</li>
+          <li>Personnalité compréhensive et collaborative</li>
           <li>Flexibilité de travail</li>
           <li>Habitué au travail à distance</li>
           <li>Formé à la méthode Agile </li>
