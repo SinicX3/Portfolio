@@ -1,5 +1,5 @@
 :root
-  --profile-color: linear-gradient(135deg,rgb(146, 138, 255), #bcb5ff)
+  --profile-color: linear-gradient(135deg,rgb(127, 118, 255), #bcb5ff)
   --1st-site-color: linear-gradient(135deg, #ffc77d, #ffb17d)
   --2nd-site-color: linear-gradient(135deg, #7aff81, #32d3a4)
   --3rd-site-color: linear-gradient(135deg,rgb(255, 138, 138),rgb(255, 181, 181))
@@ -82,7 +82,7 @@ main
 section
   width: 80%
 
-#Moovit_section, #Kasa_section
+#Moovit_section, #Site_section
   display: none
   color: white
 
@@ -125,8 +125,9 @@ section
     width: 40px
     height: 40px
     padding: 20px 20px
-    margin: 0px 20px
+    margin: 40px 10px
     border: solid
+    border-color: #000000
     border-width: 1px
     border-radius: 15px
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2)
@@ -138,7 +139,7 @@ section
 .profile
   display: flex
   justify-content: center
-  margin: 80px 20px
+  margin: 80px 20px 0px 20px
 
   .text
     margin-left: 40px
@@ -251,73 +252,22 @@ section
 
 // *********** Kasa
 
-#Kasa_section
-  grid-template-columns: repeat(3, 33%)
-  gap: 2rem
-  padding: 2rem
+#Site_section
+  display: none
 
   > *
     border-radius: 15px
 
   .site_description
-    grid-column: 1 / 4
     background: var(--2nd-site-color)
     padding: 1.5rem
     display: flex
-    flex-direction: column
-    align-items: center
-
-  .site_img
-    grid-column: 2 / 4
-    background: var(--2nd-site-color)
-    display: flex
-    justify-content: center
+    flex-direction: row
     align-items: center
 
     img
-      padding: 15px
-      width: 100%
-      border-radius: 20px
-
-  .objectifs
-    grid-column: 1 / 3
-    background: var(--2nd-site-color)
-    padding: 1.5rem
-
-    h3
-      margin-bottom: 1rem
-
-    ul
-      list-style: inside disc
-      li
-        margin-bottom: 0.5rem
-
-  .site_technos
-    grid-column: 1 / 3
-    background: var(--2nd-site-color)
-    padding: 1.5rem
-
-    h3
-      margin-bottom: 1rem
-
-    ul
-      list-style: inside square
-      li
-        margin-bottom: 0.5rem
-
-  .site_link
-    grid-column: 1 / 4
-    text-align: center
-    margin-top: 2rem
-
-    a
-      font-size: 1.2rem
-      color: var(--font-1st-color)
-      text-decoration: none
-      font-weight: bold
-
-      &:hover
-        text-decoration: underline
+      width: 300px
+      margin: 40px 80px
 
 //*********** CaesR
 
@@ -361,19 +311,24 @@ section
 
 @media screen and (max-width: 820px)
 
-  #Kasa_section, #Moovit_section, .skills
-    grid-template-columns: 1fr
+  .skills
+    grid-template-columns: 100%
 
-  .site_description,
-  .site_img,
-  .objectifs,
-  .site_technos,
-  .site_link
-    grid-column: 1 / 2
+  #Site_section, #Moovit_section
+    grid-template-columns: 100%
 
-  .site_img
-    img
-      width: 100%
+    .site_description,
+    .site_img,
+    .objectifs,
+    .site_technos,
+    .site_link
+      flex-direction: column
+
+      img
+        width: 180px
+
+      h2
+        text-align: center
 
   .profile
     flex-direction: column

@@ -7,7 +7,7 @@ return (<header>
     <div id="Home" className="button" onClick={() => Display ("profile_section")}>Accueil</div>
     <p>Réalisations :</p> 
     <div id="Moovit" className="button" onClick={() => Display("Moovit_section")}>MoovIt</div>
-    <div id="Kasa" className="button" onClick={() => Display("Kasa_section")}>Kasa</div>
+    <div id="Kasa" className="button" onClick={() => Display("Site_section")}>Kasa</div>
     {/* <div id="CaesR" className="button" onClick={() => Display("CaesR_section")}>CaesR</div> // Un autre projet à venir !*/} 
   </div>
 </header>)

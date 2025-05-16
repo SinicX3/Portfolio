@@ -6,7 +6,6 @@ function Profile () {
 
   const [modalOpen, setModalOpen] = useState(false);
   Hidden("profile_section", 500)
-  Hidden("react", 1000)
 
   return(
   <section id="profile_section" className="panel hidden">
@@ -55,8 +54,8 @@ function Profile () {
         <h2>Soft skills adaptés au travail d'équipe</h2>
         <ul>
           <li>Personnalité compréhensive et collaborative</li>
-          <li>Flexibilité de travail</li>
-          <li>Habitué au travail à distance</li>
+          <li>Force de proposition</li>
+          <li>Adopte du travail à distance</li>
           <li>Formé à la méthode Agile </li>
         </ul>
       </div>

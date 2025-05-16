@@ -1,14 +1,14 @@
 import Profile from "../Profile"
 import CaesR from "../Sites/CaesR"
 import Moovit from "../Sites/Moovit"
-import Kasa from "../Sites/Kasa"
+import Site from "../Sites/Site"
 
 function App () {
 
   return(<main>
     <Moovit />
     <CaesR />
-    <Kasa />
+    <Site />
     <Profile />
   </main>)
 }
