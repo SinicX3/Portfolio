@@ -82,7 +82,7 @@ main
 section
   width: 80%
 
-#Moovit_section, #Site_section
+#Moovit_section, #Kasa_section
   display: none
   color: white
 
@@ -177,97 +177,44 @@ section
       &:hover
         animation: rebond 2s ease infinite
 
-//*********** Moovit
+// *********** Kasa, Moovit
 
-#Moovit_section
-  grid-template-columns: repeat(3, 33%)
-  gap: 2rem
-  padding: 2rem
-
-  img
-    width: 20%
-
-  > *
-    border-radius: 15px
-
-  .site_description
-    grid-column: 1 / 4
-    background: var(--1st-site-color)
-    padding: 1.5rem
-    display: flex
-    flex-direction: column
-    align-items: center
-
-  .site_img
-    grid-column: 2 / 4
-    background: var(--1st-site-color)
-    display: flex
-    justify-content: center
-    align-items: center
-
-    img
-      padding: 15px
-      width: 100%
-      border-radius: 20px
-
-  .objectifs
-    grid-column: 1 / 3
-    background: var(--1st-site-color)
-    padding: 1.5rem
-
-    h3
-      margin-bottom: 1rem
-
-    ul
-      list-style: circle
-      li
-        margin-bottom: 0.5rem
-
-  .site_technos
-    grid-column: 1 / 3
-    background: var(--1st-site-color)
-    padding: 1.5rem
-
-    h3
-      margin-bottom: 1rem
-
-    ul
-      list-style: circle
-      li
-        margin-bottom: 0.5rem
-
-  .site_link
-    grid-column: 1 / 4
-    text-align: center
-    margin-top: 2rem
-
-    a
-      font-size: 1.2rem
-      color: var(--font-1st-color)
-      text-decoration: none
-      font-weight: bold
-
-      &:hover
-        text-decoration: underline
-
-// *********** Kasa
-
-#Site_section
+#Kasa_section, #Moovit_section
   display: none
 
   > *
     border-radius: 15px
 
-  .site_description
-    background: var(--2nd-site-color)
+  .site_description, .site_skills
     padding: 1.5rem
     display: flex
-    flex-direction: row
     align-items: center
 
     img
       width: 300px
       margin: 40px 80px
+
+  .site_skills
+    justify-content: center
+
+  .site_link
+    text-align: center
+    font-size: 25px
+    margin: 40px
+    
+    a
+      text-decoration: none
+      font-weight: 700
+      color: black
+      
+
+#Kasa_section
+  .site_description, .site_skills
+    background: var(--2nd-site-color)
+
+#Moovit_section
+  .site_description, .site_skills
+    background: var(--1st-site-color)
 
 //*********** CaesR
 
@@ -285,6 +232,7 @@ section
   border-radius: 20px
 
 //***************************************************************** Animations profil
+
 @keyframes rotate
   from
     transform: rotate(0deg)
@@ -314,7 +262,7 @@ section
   .skills
     grid-template-columns: 100%
 
-  #Site_section, #Moovit_section
+  #Kasa_section, #Moovit_section
     grid-template-columns: 100%
 
     .site_description,

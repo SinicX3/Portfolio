@@ -2,18 +2,18 @@ import { useState } from 'react'
 import './sass-module.sass'
 
 interface CarouselProps {
-  images: string[]
+  img: string[]
 }
 
-function Carousel({ images }: CarouselProps) {
+function Carousel({ img }: CarouselProps) {
   const [index, setIndex] = useState(0)
 
   const prev = () => {
-    setIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1))
+    setIndex((prevIndex) => (prevIndex === 0 ? img.length - 1 : prevIndex - 1))
   }
 
   const next = () => {
-    setIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
+    setIndex((prevIndex) => (prevIndex === img.length - 1 ? 0 : prevIndex + 1))
   }
 
   return (
@@ -26,8 +26,7 @@ function Carousel({ images }: CarouselProps) {
           className="carousel__track"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
-          {images.map((src, i) => (
-            console.log(src),
+          {img.map((src, i) => (
             <img key={i} src={src} alt={`Slide ${i}`} className="carousel__img" />
           ))}
         </div>

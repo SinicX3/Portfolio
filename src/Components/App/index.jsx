@@ -1,14 +1,13 @@
 import Profile from "../Profile"
 import CaesR from "../Sites/CaesR"
-import Moovit from "../Sites/Moovit"
 import Site from "../Sites/Site"
+import data from "../../data/data.json"
 
 function App () {
 
   return(<main>
-    <Moovit />
     <CaesR />
-    <Site />
+    {data.map((e, index) => <Site key={index} site={e}/>)}
     <Profile />
   </main>)
 }
