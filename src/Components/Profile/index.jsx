@@ -60,6 +60,10 @@ function Profile () {
         </ul>
       </div>
     </div>
+    <div className="contact">
+      <a href="https://github.com/SinicX3"><img src="/github-logo.png" /></a>
+      <a href="https://www.linkedin.com/in/benoit-th%C3%A9ry-bb5a6080/"><img src="/icons8-linkedin-500.png" /></a>
+    </div>
   </section>)
 }
 
