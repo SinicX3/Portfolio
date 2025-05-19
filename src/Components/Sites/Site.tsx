@@ -1,7 +1,7 @@
 import Carousel from "../../Shared Components/Carousel"
+import type { Site, SiteProps } from "../../data/types"
 
-function Site({site}) {
-  // Ne pas oublier la vérification des props
+function Site({site}: SiteProps) {
  
   return(
     <section id={`${site.name}_section`} className="panel">
@@ -14,13 +14,13 @@ function Site({site}) {
         <div>
           <h2>Objectifs</h2>
           <ul>
-            {site.goals.map((e) => <li>{e}</li>)}
+            {site.goals.map((e: string) => <li>{e}</li>)}
           </ul>
         </div>
         <div>
           <h2>Technologies utilisées</h2>
           <ul>
-            {site.techs.map((e) => <li>{e}</li>)}
+            {site.techs.map((e: string) => <li>{e}</li>)}
           </ul>
         </div>
       </div>
