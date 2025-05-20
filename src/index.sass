@@ -82,13 +82,13 @@ main
 section
   width: 80%
 
-#Moovit_section, #Kasa_section
+#Moovit__section, #Kasa__section
   display: none
   color: white
 
 //*********** Section profile
 
-#profile_section
+#profile__section
   display: initial
   background: var(--profile-color)
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2)
@@ -189,13 +189,13 @@ section
 
 // *********** Kasa, Moovit
 
-#Kasa_section, #Moovit_section
+#Kasa__section, #Moovit__section
   display: none
 
   > *
     border-radius: 15px
 
-  .site_description, .site_skills
+  .site__description, .site__skills
     padding: 1.5rem
     display: flex
     align-items: center
@@ -204,10 +204,10 @@ section
       width: 300px
       margin: 40px 80px
 
-  .site_skills
+  .site__skills
     justify-content: center
 
-  .site_link
+  .site__link
     text-align: center
     font-size: 25px
     margin: 40px
@@ -218,17 +218,17 @@ section
       color: black
       
 
-#Kasa_section
-  .site_description, .site_skills
+#Kasa__section
+  .site__description, .site__skills
     background: var(--2nd-site-color)
 
-#Moovit_section
-  .site_description, .site_skills
+#Moovit__section
+  .site__description, .site__skills
     background: var(--1st-site-color)
 
 //*********** CaesR
 
-#CaesR_section
+#CaesR__section
   display: none
   background: var(--3rd-site-color)
 
@@ -272,14 +272,11 @@ section
   .skills
     grid-template-columns: 100%
 
-  #Kasa_section, #Moovit_section
+  #Kasa__section, #Moovit__section
     grid-template-columns: 100%
 
-    .site_description,
-    .site_img,
-    .objectifs,
-    .site_technos,
-    .site_link
+    .site__description,
+    .site__link
       flex-direction: column
 
       img

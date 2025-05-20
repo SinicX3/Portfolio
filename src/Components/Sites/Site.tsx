@@ -4,13 +4,13 @@ import type { Site, SiteProps } from "../../data/types"
 function Site({site}: SiteProps) {
  
   return(
-    <section id={`${site.name}_section`} className="panel">
-      <div className="site_description">
+    <section id={`${site.name}__section`} className="panel">
+      <div className="site__description">
         <img src={`/sites/${site.name}_logo.png`} id={`${site.name}_logo.png`} alt={`Logo de ${site.name}`} />
         <p>{site.description}</p>
       </div>
       <Carousel img={site.img} />
-      <div className="site_skills">
+      <div className="site__skills">
         <div>
           <h2>Objectifs</h2>
           <ul>
@@ -24,7 +24,7 @@ function Site({site}: SiteProps) {
           </ul>
         </div>
       </div>
-          <div className="site_link">
+          <div className="site__link">
       <a href={site.url} target="_blank" rel="noopener noreferrer">
         Retrouvez ce projet sur GitHub
       </a>

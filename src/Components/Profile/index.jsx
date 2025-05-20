@@ -5,10 +5,10 @@ import { useState } from "react"
 function Profile () {
 
   const [modalOpen, setModalOpen] = useState(false);
-  Hidden("profile_section", 500)
+  Hidden("profile__section", 500)
 
   return(
-  <section id="profile_section" className="panel hidden">
+  <section id="profile__section" className="panel hidden">
     <div className="profile">
       <img src="/IMG_9743.jpg" id="photo"/>
       <div className="text">
