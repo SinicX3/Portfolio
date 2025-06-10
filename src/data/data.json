@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Moovit",
+        "description": "MoovIt est un projet personnel. Il répond à une envie de développer la pratique de l'auto-partage dans les communes petites et moyennes.",
+        "img": ["/sites/Moovit (1).png", "/sites/Moovit (2).png", "/sites/Moovit (3).png"],
+        "goals":[ 
+            "Donner la possibilité de trouver un véhicule n'importe où en France",
+            "Pouvoir proposer un véhicule en tant que particulier",
+            "Pouvoir demander un véhicule mis à disposition en auto-partage"
+        ],
+        "techs": [
+            "React, React Router",
+            "Gestion d'état avec useState",
+            "GitHub"
+        ],
+        "url": "https://github.com/SinicX3/MoovIt.git"
+    },
+    {
+        "name": "Kasa",
+        "description": "Produit dans le cadre de la formation 'Développeur web' d'OpenClassrooms, le projet Kasa illustre mon utilisation de React et React-Router.",
+        "img": ["/sites/Kasa (1).png", "/sites/Kasa (2).png", "/sites/Kasa (3).png"],
+        "goals":[ 
+            "Produire un site intuitif",
+            "Assurer une navigation fluide et responsive",
+            "Utiliser React pour la structuration des composants",
+            "Respecter une maquette fournie en responsive design"
+        ],
+        "techs": [
+            "React, React Router",
+            "Librairie Leaflet",
+            "GitHub"
+        ],
+        "url": "https://github.com/SinicX3/Projet-5---React.git"
+    }
+]
